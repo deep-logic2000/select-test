@@ -7,7 +7,6 @@ import "./styles.css";
 
 const Option = ({ data, toggleFavorite, styles }) => {
   const { value, label, isFavorite } = data;
-  console.log("data", data);
   return (
     <li key={value} className="option" style={styles}>
       <div className="option__img">

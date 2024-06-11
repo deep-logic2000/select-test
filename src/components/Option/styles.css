@@ -28,4 +28,5 @@
 
 .option__text {
   color: #d2d1d2;
+  user-select: none;
 }

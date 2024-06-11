@@ -124,7 +124,8 @@ const CustomSelect = () => {
             <div>
               <button
                 className="select-tabs__tab tab__favorite"
-                onClick={() => handleTabChange(0)}>
+                onClick={() => handleTabChange(0)}
+                disabled={selectedTab === 0}>
                 <img src={starFull} alt="star full" className="star__icon" />
                 <span
                   className={`tab__text ${selectedTab === 0 ? "active" : ""}`}>
@@ -134,7 +135,8 @@ const CustomSelect = () => {
             </div>
             <button
               className="select-tabs__tab"
-              onClick={() => handleTabChange(1)}>
+              onClick={() => handleTabChange(1)}
+              disabled={selectedTab === 1}>
               <span
                 className={`tab__text ${selectedTab === 1 ? "active" : ""}`}>
                 ALL COINS
